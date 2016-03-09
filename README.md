@@ -34,7 +34,7 @@ Main application which receive and save the video stream from network on a local
 
 Valid UDP commands are
 * `status`: Answer is 0 (waiting for stream), 1 (receiving video stream), 2(writing video to disk)
-* `save2016-03-01`: Save the last n seconds of video stream on disk in file `2016-03-01.mkv`
+* `save2016-03-01`: Save the last `duration_sec` seconds of video stream on disk in file `2016-03-01.mkv`
 
 ### UDP Tools
 For debugging and testing the UDP functionality, there are two tools:
