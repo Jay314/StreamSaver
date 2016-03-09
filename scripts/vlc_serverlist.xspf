@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist xmlns="http://xspf.org/ns/0/" xmlns:vlc="http://www.videolan.org/vlc/playlist/ns/0/" version="1">
+	<title>Wiedergabeliste</title>
+	<trackList>
+		<track>
+			<location>v4l2://</location>
+			<extension application="http://www.videolan.org/vlc/playlist/0">
+				<vlc:id>0</vlc:id>
+				<vlc:option>v4l2-standard=</vlc:option>
+				<vlc:option>live-caching=300</vlc:option>
+				<vlc:option>sout=#transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100}:duplicate{dst=udp{dst=192.168.179.56:1234},dst=display}</vlc:option>
+				<vlc:option>sout-all</vlc:option>
+				<vlc:option>sout-keep</vlc:option>
+			</extension>
+		</track>
+	</trackList>
+	<extension application="http://www.videolan.org/vlc/playlist/0">
+			<vlc:item tid="0"/>
+	</extension>
+</playlist>
