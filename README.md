@@ -15,17 +15,17 @@ To compile the project on any other architecture, the libraries of OpenCV (versi
 Category | Entry | Value | Description
 --- | --- | --- | ---
 `StreamingSource` |`RTP_IP` | 192.168.1.9 | IP of the interface, where the RTP video stream comes in
-|`RTP_PORT` | 5004 | port of the incoming video stream
+ |`RTP_PORT` | 5004 | port of the incoming video stream
 `StreamSavings` |`duration_sec` | 20 | video buffer in seconds - attention: depending on RAM!
-|`show_time` | 1 | overlay the current time in video stream
-|`time_font_size` | 0.6 | size of overlaying time
+ |`show_time` | 1 | overlay the current time in video stream
+ |`time_font_size` | 0.6 | size of overlaying time
 `FileOutput` |`output_folder` | /home/eapps4production/Videos/ | output folder of the video file on local machine; video is coded in H264
-|`fps` | 30 | framerate of the incoming and saving video stream
-|`file_container` | mkv | file container of the video file
+ |`fps` | 30 | framerate of the incoming and saving video stream
+ |`file_container` | mkv | file container of the video file
 `UDPTrigger` |`listen_IP` | 192.168.1.10 | IP of the interface, where StreamSaver is listening for incoming UDP commands
-|`listen_PORT` | 1234 | port for incoming UDP commands
-|`answer_IP` | 192.168.1.10 | IP of the remote machine, where the answer should be send to
-|`answer_PORT` | 1235 | port of the remote machine
+ |`listen_PORT` | 1234 | port for incoming UDP commands
+ |`answer_IP` | 192.168.1.10 | IP of the remote machine, where the answer should be send to
+ |`answer_PORT` | 1235 | port of the remote machine
 `RunningOptions` |`show_image` | false | for debugging only - shows the current video stream on local machine
 
 ## Applications
