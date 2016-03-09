@@ -10,6 +10,7 @@ To compile the project on any other architecture, the libraries of OpenCV (versi
 * Libraries of OpenCV (version >= 3.0)
 * broadcastet video stream in network (e.g. VLC Player run with example calling script)
 * required RAM on machine where StreamSaver running greater than 2 GB
+
 ### Config File
 Category | Entry | Value | Description
 --- | --- | --- | ---
